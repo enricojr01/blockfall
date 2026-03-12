@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bhtfxjcr0cxrq"]
+
+[ext_resource type="Script" uid="uid://b3mfsvprvto1w" path="res://Scripts/block_base.gd" id="1_fbkjn"]
+[ext_resource type="Texture2D" uid="uid://dc4tjikliinh3" path="res://TetrisBlocks2.png" id="2_yp1nu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdps7"]
+texture = ExtResource("2_yp1nu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+1:2/0 = 0
+0:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_khg0i"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_fdps7")
+
+[node name="BlockBase" type="Node2D" unique_id=421937238 node_paths=PackedStringArray("canvas")]
+script = ExtResource("1_fbkjn")
+canvas = NodePath("TileMapLayer")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1949380237]
+tile_set = SubResource("TileSet_khg0i")
