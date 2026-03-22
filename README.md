@@ -1,3 +1,5 @@
+![Title screen](../screenshots/Screenshots/Title.png)
+
 # About
 This repository houses the Godot assets for a simple Tetris clone. I built it for fun over several weekends, and even drew all the graphics myself. Built with Godot 4.6.
 
@@ -9,3 +11,6 @@ Up arrow key - rotate block clockwise
 Down arrow key - soft drop block
 Spacebar - Hard drop
 Left Shift - Hold piece. Pressing again will swap the two.
+
+# Gameplay Screenshot
+![Gameplay screenshot](../screenshots/Screenshots/Gameplay.png)
